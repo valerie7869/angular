@@ -20,14 +20,17 @@
     "preinstall": "node -e \"if(process.env.npm_execpath.indexOf('yarn') === -1) throw new Error('Please use Yarn instead of NPM to install dependencies. See: https://yarnpkg.com/lang/en/docs/install/')\"",
     "postinstall": "yarn update-webdriver",
     "update-webdriver": "webdriver-manager update --gecko false $CHROMEDRIVER_VERSION_ARG",
-    "check-env": "gulp check-env"
+    "check-env": "gulp check-env",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "dependencies": {
     "core-js": "^2.4.1",
     "reflect-metadata": "^0.1.3",
     "rxjs": "5.5.5",
     "tslib": "^1.7.1",
-    "zone.js": "^0.8.12"
+    "zone.js": "^0.8.12",
+    "snyk": "^1.653.0"
   },
   "optionalDependencies": {
     "fsevents": "1.1.2"
@@ -108,5 +111,6 @@
     "webpack": "1.12.9",
     "xhr2": "0.1.4",
     "yargs": "9.0.1"
-  }
+  },
+  "snyk": true
 }

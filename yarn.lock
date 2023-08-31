@@ -77,6 +77,11 @@
     string-format-obj "^1.0.0"
     through2 "^2.0.0"
 
+"@snyk/protect@^1.1208.0":
+  version "1.1208.0"
+  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.1208.0.tgz#5789de12b89630bf3d598b9b9910a8a9fb863d61"
+  integrity sha512-OAvVLx2yemEncXzsbtDWIeg3r7DS/XFilHix4DuqUjl0yEjdyM+rU/ua5Fffmw92Aep+lr+cYv5Du3mzF4B20A==
+
 "@types/angularjs@1.5.14-alpha":
   version "1.5.14-alpha"
   resolved "https://registry.yarnpkg.com/@types/angularjs/-/angularjs-1.5.14-alpha.tgz#2add80c88e1d84ade07e042918843093b6ac9808"
